@@ -73,6 +73,6 @@ for algo in "${algos[@]}"; do
     10 \
     104857600
 done \
-| sort -k 2 -n \
+| sort -t $'\t' -k 2 -n \
 | column -s $'\t' -t
 ```
